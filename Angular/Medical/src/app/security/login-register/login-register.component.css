@@ -1,0 +1,24 @@
+.form-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-form,
+.register-form {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-form {
+  transform: translateX(0);
+}
+
+.register-form {
+  transform: translateX(-100%);
+}
