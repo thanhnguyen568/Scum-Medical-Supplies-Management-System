@@ -5,11 +5,17 @@
         <h2 class="title">Đăng nhập</h2>
         <div class="input-field">
           <i class="fas fa-user"></i>
-          <input type="text" placeholder="Tài khoản"/>
+          <input type="text" placeholder="Tài khoản" formControlName="username"/>
         </div>
         <div class="input-field">
           <i class="fas fa-lock"></i>
-          <input type="password" placeholder="Mật khẩu"/>
+          <input type="password" placeholder="Mật khẩu" formControlName="password"/>
+        </div>
+        <div>
+          <input class="form-check-input align-middle me-2" type="checkbox" id="disabledFieldsetCheck">
+          <label class="form-check-label align-middle" for="disabledFieldsetCheck">
+            Nhớ tài khoản
+          </label>
         </div>
         <input type="submit" value="Đăng nhập" class="btn btn-customize"/>
         <p class="social-text">Hoặc đăng nhập với các nền tảng mạng xã hội</p>
@@ -49,4 +55,3 @@
     </div>
   </div>
 </div>
-
