@@ -12,7 +12,7 @@ input {
 }
 
 .container {
-  position: relative;
+  /*position: relative;*/
   width: 100%;
   background-color: #fff;
   min-height: 100vh;
@@ -128,13 +128,13 @@ form.sign-in-form {
 }
 
 .social-icon:hover {
-  color: #4481eb;
-  border-color: #4481eb;
+  color: #126057;
+  border-color: #126057;
 }
 
 .btn {
   width: 150px;
-  background-color: #5995fd;
+  background-color: #2F8A7F;
   border: none;
   outline: none;
   height: 49px;
@@ -148,7 +148,7 @@ form.sign-in-form {
 }
 
 .btn:hover {
-  background-color: #4d84e2;
+  background-color: #126057;
 }
 .panels-container {
   position: absolute;
@@ -166,9 +166,9 @@ form.sign-in-form {
   height: 2000px;
   width: 2000px;
   top: -10%;
-  right: 48%;
+  right: 50%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+  background-image: linear-gradient(-45deg, #00b894 0%, #00b894 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -233,42 +233,42 @@ form.sign-in-form {
 
 /* ANIMATION */
 
-.container.sign-up-mode:before {
-  transform: translate(100%, -50%);
-  right: 52%;
-}
+/*.container.sign-up-mode:before {*/
+/*  transform: translate(100%, -50%);*/
+/*  right: 52%;*/
+/*}*/
 
-.container.sign-up-mode .left-panel .image,
-.container.sign-up-mode .left-panel .content {
-  transform: translateX(-800px);
-}
+/*.container.sign-up-mode .left-panel .image,*/
+/*.container.sign-up-mode .left-panel .content {*/
+/*  transform: translateX(-800px);*/
+/*}*/
 
-.container.sign-up-mode .signin-signup {
-  left: 25%;
-}
+/*.container.sign-up-mode .signin-signup {*/
+/*  left: 25%;*/
+/*}*/
 
-.container.sign-up-mode form.sign-up-form {
-  opacity: 1;
-  z-index: 2;
-}
+/*.container.sign-up-mode form.sign-up-form {*/
+/*  opacity: 1;*/
+/*  z-index: 2;*/
+/*}*/
 
-.container.sign-up-mode form.sign-in-form {
-  opacity: 0;
-  z-index: 1;
-}
+/*.container.sign-up-mode form.sign-in-form {*/
+/*  opacity: 0;*/
+/*  z-index: 1;*/
+/*}*/
 
-.container.sign-up-mode .right-panel .image,
-.container.sign-up-mode .right-panel .content {
-  transform: translateX(0%);
-}
+/*.container.sign-up-mode .right-panel .image,*/
+/*.container.sign-up-mode .right-panel .content {*/
+/*  transform: translateX(0%);*/
+/*}*/
 
-.container.sign-up-mode .left-panel {
-  pointer-events: none;
-}
+/*.container.sign-up-mode .left-panel {*/
+/*  pointer-events: none;*/
+/*}*/
 
-.container.sign-up-mode .right-panel {
-  pointer-events: all;
-}
+/*.container.sign-up-mode .right-panel {*/
+/*  pointer-events: all;*/
+/*}*/
 
 @media (max-width: 870px) {
   .container {

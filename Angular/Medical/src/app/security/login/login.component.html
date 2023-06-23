@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="forms-container">
+    <div class="signin-signup">
+      <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+        <h2 class="title">Đăng nhập</h2>
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Tài khoản"/>
+        </div>
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Mật khẩu"/>
+        </div>
+        <input type="submit" value="Đăng nhập" class="btn btn-customize"/>
+        <p class="social-text">Hoặc đăng nhập với các nền tảng mạng xã hội</p>
+        <div class="social-media">
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="panels-container">
+    <div class="panel left-panel">
+      <div class="content">
+        <h3>Bạn cần giúp đỡ ?</h3>
+        <p>
+          Hãy liên hệ ngay với chúng tôi để được tư vấn miễn phí, bằng cách đăng nhập vào hệ thống
+          hoặc nhấn nút đăng ký bên dưới !
+        </p>
+        <button class="btn transparent" id="sign-up-btn">
+          Đăng ký
+        </button>
+      </div>
+      <img src="/assets/img/log.svg" class="image" alt=""/>
+    </div>
+    <div class="panel right-panel">
+    </div>
+  </div>
+</div>
+
