@@ -1,7 +1,7 @@
 <div class="container">
   <div class="forms-container">
     <div class="signin-signup">
-      <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
         <h2 class="title">Đăng nhập</h2>
         <div class="input-field">
           <i class="fas fa-user"></i>
@@ -12,7 +12,8 @@
           <input type="password" placeholder="Mật khẩu" formControlName="password"/>
         </div>
         <div>
-          <input class="form-check-input align-middle me-2" type="checkbox" id="disabledFieldsetCheck">
+          <input class="form-check-input align-middle me-2" type="checkbox" id="disabledFieldsetCheck"
+                 formControlName="remember_me">
           <label class="form-check-label align-middle" for="disabledFieldsetCheck">
             Nhớ tài khoản
           </label>
@@ -49,7 +50,7 @@
           Đăng ký
         </button>
       </div>
-      <img src="/assets/img/log.svg" class="image" alt=""/>
+      <img src="assets/img/login.svg" class="image" alt=""/>
     </div>
     <div class="panel right-panel">
     </div>

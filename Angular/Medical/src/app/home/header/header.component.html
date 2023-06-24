@@ -1,12 +1,51 @@
-<div class="">
-  <!-- Sidebar on click -->
-  <nav>
-    <a href="#home" class="active">Home</a>
-    <a href="#" class="w3-bar-item w3-button">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button">Link 4</a>
-    <a href="#" class="w3-bar-item w3-button">Link 5</a>
-    <a routerLink="/login">Đăng nhập</a>
-  </nav>
-</div>
-
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.png" alt="" style="width: 60px; height: 60px">
+    </a>
+    <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <i class="fa fa-bars text-light" aria-hidden="true"></i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Danh mục
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Quản lý kho</a></li>
+            <li><a class="dropdown-item" href="#">Quản lý lương</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Thống kê</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Trợ giúp</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control" type="search" placeholder="Nhập từ khóa..." aria-label="Search">
+        <!--        <button class="btn btn-outline-success" type="submit">Search</button>-->
+      </form>
+      <div class="d-flex">
+        <a class="ms-3 me-3" routerLink="/cart">
+          <i class="fa fa-shopping-cart fa-2x" style="color: #f0f0f0"></i>
+        </a>
+        <a type="button" class="btn btn-outline-light mb-3 mb-lg-0 me-2" routerLink="/login">Đăng nhập</a>
+        <a type="button" class="btn btn-outline-warning mb-3 mb-lg-0" routerLink="/register">Đăng ký</a>
+      </div>
+    </div>
+  </div>
+</nav>
