@@ -5,6 +5,9 @@ nav {
   width: 100%;
 }
 
+.navbar {
+  background: #00b894;
+}
 .nav-link {
   color: #f0f0f0;
 }

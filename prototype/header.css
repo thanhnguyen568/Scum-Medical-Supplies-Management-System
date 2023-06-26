@@ -1,0 +1,23 @@
+nav {
+    position: absolute;
+    background: #00b894;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar {
+    background: #00b894;
+}
+.nav-link {
+    color: #f0f0f0;
+}
+
+.dropdown-item{
+    /*background: #55efc4;*/
+}
+
+@media (max-width: 870px) {
+}
+
+@media (max-width: 570px) {
+}
