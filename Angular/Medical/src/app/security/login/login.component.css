@@ -153,6 +153,7 @@ form.sign-in-form {
   background-color: #00b894;
   border-color: #126057;
 }
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -166,8 +167,8 @@ form.sign-in-form {
 .container:before {
   content: "";
   position: absolute;
-  height: 2000px;
-  width: 2000px;
+  height: 1000px;
+  width: 1000px;
   top: -10%;
   right: 50%;
   transform: translateY(-50%);
@@ -239,6 +240,7 @@ form.sign-in-form {
     min-height: 800px;
     height: 100vh;
   }
+
   .signin-signup {
     width: 100%;
     top: 95%;
@@ -345,20 +347,25 @@ form.sign-in-form {
   .image {
     display: none;
   }
+
   .panel .content {
     padding: 0.5rem 1rem;
   }
+
   .container {
     padding: 1.5rem;
   }
 
   .container:before {
-    bottom: 72%;
-    left: 50%;
+    opacity: 0;
   }
 
   .container.sign-up-mode:before {
     bottom: 28%;
     left: 50%;
+  }
+
+  .content {
+    opacity: 0;
   }
 }
