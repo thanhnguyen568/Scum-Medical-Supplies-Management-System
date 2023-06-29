@@ -1,3 +1,195 @@
+
+
+/* ---------------------------------------------
+
+
+--------------------------------------------- */
+/*
+---------------------------------------------
+font & reset css
+---------------------------------------------
+*/
+/*@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");*/
+/*
+---------------------------------------------
+reset
+---------------------------------------------
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+.header {
+  z-index: 100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #fff;
+  -ms-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+/*
+---------------------------------------------
+global styles
+---------------------------------------------
+*/
+html,
+body {
+  background: #fff;
+}
+
+::selection {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.main-border-button a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 25px;
+  display: inline-block;
+  transition: all .3s;
+}
+
+.main-border-button a:hover {
+  background-color: #fff;
+  color: #2a2a2a;
+}
+
+.main-white-button a {
+  color: #2a2a2a;
+  background-color: #fff;
+  padding: 12px 25px;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all .3s;
+}
+
+.main-white-button a:hover {
+  opacity: 0.9;
+}
+
+.main-text-button a {
+  color: #fff;
+  transition: all .3s;
+}
+
+.main-text-button a:hover {
+  opacity: 0.9;
+}
+
+.section-heading h2 {
+  color: #2a2a2a;
+}
+
+/*
+---------------------------------------------
+global main header
+---------------------------------------------
+*/
+.van {
+  background-color: #00b894;
+}
+/*
+---------------------------------------------
+global SEARCH
+---------------------------------------------
+*/
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  /*padding: 8px;*/
+  border-radius: 4px;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  padding: 6px 12px;
+}
+
+.search-button {
+  background-color: #55efc4;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.search-button:hover {
+  background-color: #FFD333;
+}
+
+.fa-search {
+}
+
+/*
+---------------------------------------------
+global header
+---------------------------------------------
+*/
 nav {
   position: absolute;
   background: #00b894;
@@ -11,6 +203,14 @@ nav {
 .nav-link {
   color: #f0f0f0;
 }
+.navbar-nav .nav-link.active {
+  color: #f0f0f0;
+}
+
+.nav-link.disabled{
+  color: #f0f0f0;
+}
+
 
 .dropdown-item{
   /*background: #55efc4;*/
@@ -21,3 +221,134 @@ nav {
 
 @media (max-width: 570px) {
 }
+
+
+
+
+/*
+---------------------------------------------
+banner
+---------------------------------------------
+*/
+#products .section-heading {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.products-box .section-heading {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/*MAIN-BANNER*/
+.main-banner {
+  border-bottom: 3px dotted #eee;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 60px;
+  padding-left: 60px;
+
+}
+
+.main-banner .left-content .thumb img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-banner .left-content .inner-content {
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-banner .left-content .inner-content h4 {
+  color: #0b0b0c;
+  margin-top: -10px;
+
+  margin-bottom: 20px;
+}
+
+.main-banner .left-content .inner-content span {
+  color: #0b0b0c;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.main-banner .right-content .right-first-image {
+  margin-bottom: 28.5px;
+}
+
+.main-banner .right-content .right-first-image .thumb {
+  position: relative;
+  text-align: center;
+}
+
+.main-banner .right-content .right-first-image .thumb img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-banner .right-content .right-first-image .thumb .inner-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.main-banner .right-content .right-first-image .thumb .inner-content h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.main-banner .right-content .right-first-image .thumb .inner-content span {
+  color: #fff;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  left: 15px;
+  bottom: 15px;
+  text-align: center;
+  background-color: rgba(0, 184, 148, 0.97);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.main-banner .right-content .right-first-image .thumb:hover .hover-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content h4 {
+  color: #0b0b0c;
+  margin-bottom: 15px;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content p {
+  color: #0b0b0c;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+

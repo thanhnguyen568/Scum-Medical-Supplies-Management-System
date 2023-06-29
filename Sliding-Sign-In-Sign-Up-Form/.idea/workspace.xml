@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60d0e983-c236-42a0-bdb1-fabaa47451ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Angular/Medical/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular/Medical/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prototype/[A0722I1]_Prototype_ThanhNV1.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular/Medical/src/app/security/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular/Medical/src/app/security/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular/Medical/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular/Medical/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prototype/[A0722I1]_Prototype_ThanhNV.rar" beforeDir="false" afterPath="$PROJECT_DIR$/../prototype/[A0722I1]_Prototype_ThanhNV.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prototype/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../prototype/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +27,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/CodeGym/Scum-Medical-Supplies-Management-System/Sliding-Sign-In-Sign-Up-Form",
+    "last_opened_file_path": "D:/CodeGym/Scum-Medical-Supplies-Management-System/prototype",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -36,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687527232091</updated>
       <workItem from="1687527233021" duration="88000" />
+      <workItem from="1688051279593" duration="12000" />
     </task>
     <servers />
   </component>
