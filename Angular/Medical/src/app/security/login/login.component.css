@@ -12,7 +12,7 @@ input {
 }
 
 .container {
-  /*position: relative;*/
+  position: relative;
   width: 100%;
   background-color: #fff;
   min-height: 100vh;
@@ -128,19 +128,18 @@ form.sign-in-form {
 }
 
 .social-icon:hover {
-  color: white;
-  background: #00b894;
+  color: #00b894;
   border-color: #00b894;
 }
 
 .btn {
   width: 150px;
-  background-color: #fff;
-  border: 1px solid #aaaaaa;
+  background-color: #55efc4;
+  border: none;
   outline: none;
   height: 49px;
   border-radius: 49px;
-  color: #333333;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
@@ -149,9 +148,7 @@ form.sign-in-form {
 }
 
 .btn:hover {
-  color: #fff;
   background-color: #00b894;
-  border-color: #126057;
 }
 .panels-container {
   position: absolute;
