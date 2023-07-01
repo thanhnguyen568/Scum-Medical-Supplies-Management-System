@@ -1,7 +1,43 @@
-<div class="container">
-  <div class="forms-container">
-    <div class="signin-signup">
-      <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+<!--<div class=" container">-->
+<!--  <div class="forms-container">-->
+<!--    <div class="signin-signup">-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <div class="panels-container mt-5">-->
+<!--    <div class="panel left-panel">-->
+<!--      <div class="content">-->
+<!--        <h3>Bạn cần giúp đỡ ?</h3>-->
+<!--        <p>-->
+<!--          Hãy liên hệ ngay với chúng tôi để được tư vấn miễn phí, bằng cách đăng nhập vào hệ thống-->
+<!--          hoặc nhấn nút đăng ký bên dưới !-->
+<!--        </p>-->
+<!--        <button class="btn transparent" id="sign-up-btn">-->
+<!--          Đăng ký-->
+<!--        </button>-->
+<!--      </div>-->
+<!--      <img src="assets/img/login.svg" class="image" alt=""/>-->
+<!--    </div>-->
+<!--    <div class="panel right-panel">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="panel col-sm-12 col-md-6 col-lg-6">
+      <div class="row">
+        <h3>Bạn cần giúp đỡ ?</h3>
+        <p class="">
+          Hãy liên hệ ngay với chúng tôi để được tư vấn miễn phí!
+          <input type="button" class="btn transparent" id="sign-up-btn" value="Đăng ký">
+        </p>
+      </div>
+      <img src="assets/img/login.svg" class="image" alt=""/>
+    </div>
+
+    <div class="form-container col-sm-12 col-md-6 col-lg-6">
+      <form class="mt-5 pt-5" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
         <h2 class="title">Đăng nhập</h2>
         <div class="input-field">
           <i class="fas fa-user"></i>
@@ -35,24 +71,6 @@
           </a>
         </div>
       </form>
-    </div>
-  </div>
-
-  <div class="panels-container mt-5">
-    <div class="panel left-panel">
-      <div class="content">
-        <h3>Bạn cần giúp đỡ ?</h3>
-        <p>
-          Hãy liên hệ ngay với chúng tôi để được tư vấn miễn phí, bằng cách đăng nhập vào hệ thống
-          hoặc nhấn nút đăng ký bên dưới !
-        </p>
-        <button class="btn transparent" id="sign-up-btn">
-          Đăng ký
-        </button>
-      </div>
-      <img src="assets/img/login.svg" class="image" alt=""/>
-    </div>
-    <div class="panel right-panel">
     </div>
   </div>
 </div>
