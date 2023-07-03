@@ -1,6 +1,6 @@
 package be.medical.jwt;
 
-import be.medical.service.impl.AccountDetailServiceImpl;
+import be.medical.service.impl.AccountDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -22,7 +22,7 @@ public class JwtFilter extends OncePerRequestFilter {
     @Autowired
     private JwtUtility jwtUtility;
     @Autowired
-    private AccountDetailServiceImpl accountDetailService;
+    private AccountDetailsServiceImpl accountDetailService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,

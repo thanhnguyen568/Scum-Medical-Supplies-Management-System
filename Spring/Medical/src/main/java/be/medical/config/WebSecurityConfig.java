@@ -1,7 +1,7 @@
 package be.medical.config;
 
 import be.medical.jwt.JwtFilter;
-import be.medical.service.impl.AccountDetailServiceImpl;
+import be.medical.service.impl.AccountDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +19,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private AccountDetailServiceImpl accountService;
+    private AccountDetailsServiceImpl accountService;
     @Autowired
     private JwtFilter jwtFilter;
 
