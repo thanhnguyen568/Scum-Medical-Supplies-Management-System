@@ -45,16 +45,25 @@ public class SecurityController {
          */
         String jwt = jwtUtility.generateJwtToken(loginRequest.getUsername());
 
+        /**
+         * Load user details (repo->userDetailsService->userDetailsImpl)
+         */
         AccountDetailsImpl userDetails = (AccountDetailsImpl) SecurityContextHolder.getContext()
                 .getAuthentication()
                 .getPrincipal();
 
+        /**
+         * Get list ROLE from userDetailsImpl
+         */
         List<String> roles = userDetails.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority)
                 .collect(Collectors.toList());
 
         Account account = accountService.findAccountByUserName(loginRequest.getUsername());
 
+        /**
+         * Response JWT API
+         */
         return ResponseEntity.ok(
                 new JwtResponse(
                         jwt,
