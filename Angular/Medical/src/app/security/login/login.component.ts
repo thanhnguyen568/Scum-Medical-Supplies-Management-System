@@ -44,14 +44,14 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     this.authService.login(this.formLogin.value).subscribe(data => {
         if (this.formLogin.value.remember_me) {
-          this.tokenStorageService.saveTokenLocal(data.accessToken);
-          this.tokenStorageService.saveUserLocal(data);
+          this.tokenStorageService.saveTokenLocal(data.token);
+          this.tokenStorageService.saveUserLocal(data.username);
         } else {
           this.tokenStorageService.saveTokenSession(data.accessToken);
-          this.tokenStorageService.saveUserLocal(data);
+          this.tokenStorageService.saveUserLocal(data.username);
         }
-
         this.authService.isLoggedIn = true;
+        alert('OK');
         this.username = this.tokenStorageService.getUser().username;
         this.roles = this.tokenStorageService.getUser().roles;
         this.formLogin.reset();
